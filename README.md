@@ -7,8 +7,8 @@ Pymar addition to easily use map-reduce operations with tables of relational dat
 Requirements:
 -------------
 * Python 2.7
-* pymar
-* sqlalchemy
+* [pymar](https://github.com/alexgorin/pymar)
+* [sqlalchemy](http://www.sqlalchemy.org/)
 * driver for whatever database you use (for example, psycopg for PostgreSQL). If you are not going to use databases or you are using SQLite, no driver is required.
 
 Using
