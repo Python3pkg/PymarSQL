@@ -16,7 +16,6 @@ from pymar.producer import Producer
 
 class SimpleProducer(Producer):
     """Producer for the task of sum of squares of values
-    For this particular task the keys are not really needed, but you still need to process them.
     """
     WORKERS_NUMBER = 4
 
