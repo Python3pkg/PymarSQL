@@ -13,9 +13,9 @@ from distutils.core import setup
 
 setup(
     name='PymarSQL',
-    version="0.1",
-    description="Pymar addition to easily use map-reduce operations with tables of relational data bases.",
-    url="",
+    version="0.1.1",
+    description="Pymar addition to easily scale your operations with tables of relational data bases.",
+    url="https://github.com/alexgorin/PymarSQL",
     author="Alexander Gorin",
     author_email='saniagorin@gmail.com',
     license='MIT',
@@ -26,5 +26,8 @@ setup(
     install_requires=[
           'pymar',
           'sqlalchemy'
+    ],
+    keywords=[
+        'python', 'scale', 'distribute', 'map', 'reduce', 'mongo'
     ]
 )

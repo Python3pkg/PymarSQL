@@ -1,7 +1,7 @@
 
 PymarSQL
 =====
-Pymar addition to easily use map-reduce operations with tables of relational data bases.
+Pymar addition to easily scale your operations with tables of relational data bases.
 
 
 Requirements:
