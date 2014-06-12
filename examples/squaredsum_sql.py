@@ -81,7 +81,7 @@ def remove_database():
 if __name__ == "__main__":
     """
     Before starting this script launch corresponding workers:
-    worker.py -f ./squaredsum_sql.py -s SimpleSQLSource -p SimpleProducer -q 127.0.0.1 -w 4
+    worker.py ./squaredsum_sql.py -s SimpleSQLSource -p SimpleProducer -q 127.0.0.1 -w 4
     (Run workers from the same directory because they need to use the same sqlite database.
     Otherwise you have to set the full path in CONF variable.)
     """
