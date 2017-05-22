@@ -42,7 +42,7 @@ class SQLDataSource(DataSource):
         import sqlalchemy
         self.engine = sqlalchemy.create_engine(self.CONF, echo=True)
         columns = " ".join(self.COLUMNS)
-        print "Columns = ", columns
+        print("Columns = ", columns)
         self.cursor = self.engine.execute(self.REQUEST_TEMPLATE %
                                           (columns, self.TABLE, self.limit, self.offset))
 

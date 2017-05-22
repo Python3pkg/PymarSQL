@@ -49,7 +49,7 @@ class SimpleSQLSource(SQLDataSource):
 
 
 def init_database():
-    print "Initialize database"
+    print("Initialize database")
 
     CREATE_TABLE = text("""
     CREATE TABLE IF NOT EXISTS examples (
@@ -70,13 +70,13 @@ def init_database():
         }
         for i in range(10**7)
     ])
-    print "Database initialized."
+    print("Database initialized.")
 
 
 def remove_database():
-    print "Remove database"
+    print("Remove database")
     os.remove("./exampledb")
-    print "Database removed."
+    print("Database removed.")
 
 if __name__ == "__main__":
     """
@@ -90,6 +90,6 @@ if __name__ == "__main__":
     producer = SimpleProducer()
     factory = DataSourceFactory(SimpleSQLSource)
     value = producer.map(factory)
-    print "Answer: ", value
+    print("Answer: ", value)
 
     remove_database()
